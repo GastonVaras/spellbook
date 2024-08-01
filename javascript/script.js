@@ -21,7 +21,7 @@ let showAll = true;
 function createPreparedButton(spell) {
   const preparedButton = document.createElement("button");
   preparedButton.classList.add("prepared-spells", "main-buttons");
-  preparedButton.innerHTML = '<img src="../images/prepared-icon.png" alt="Mano con hechizo">';
+  preparedButton.innerHTML = '<img src="./images/prepared-icon.png" alt="Mano con hechizo">';
   // Agregar o quitar la clase "prepared-spell" según el estado almacenado
   if (spell.prepared) {
     preparedButton.classList.add("prepared-spell");
@@ -39,7 +39,7 @@ function createPreparedButton(spell) {
 function createFavoriteButton(spell) {
   const favoriteButton = document.createElement("button");
   favoriteButton.classList.add("favorite-spells", "main-buttons");
-  favoriteButton.innerHTML = '<img src="../images/favorite-spell-icon.png" alt="Estrella favoritos">';
+  favoriteButton.innerHTML = '<img src="./images/favorite-spell-icon.png" alt="Estrella favoritos">';
 
   if (spell.favorite) {
     favoriteButton.classList.add("favorite-spell");
@@ -337,7 +337,7 @@ function createMainSpellCard(spell) {
   function createSpellButton(className, altText) {
     const button = document.createElement("button");
     button.classList.add(className, "main-buttons");
-    button.innerHTML = `<img src="../images/${className}-icon.png" alt="${altText}">`;
+    button.innerHTML = `<img src="./images/${className}-icon.png" alt="${altText}">`;
     return button;
   }
 
